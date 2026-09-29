@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-aerodynamics',
   templateUrl: './aerodynamics.component.html',
-  styleUrl: './aerodynamics.component.css'
+  styleUrl: './aerodynamics.component.scss'
 })
 export class AerodynamicsComponent implements AfterViewInit {
 

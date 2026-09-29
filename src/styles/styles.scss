@@ -1,3 +1,5 @@
+@import "../styles/colors.scss";
+
 * {
     font-family: "Oswald", sans-serif;
 }
@@ -7,7 +9,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0);
+    background-color: #11111100;
     height:  100%;
 }
 
@@ -22,9 +24,20 @@ body, html {
     justify-content: center;
     align-items: center;
     margin-top: 120px;
-    border-bottom: solid 2px #F1B82D;
+    border-bottom: solid 2px $mainGold;
     z-index: -2;
     top: 0;
+  }
+
+  .aero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -2;
   }
   
   .aero-text {
@@ -43,56 +56,46 @@ body, html {
     margin-top: calc(600px/2);
     z-index: -1;
   }
-  
-  .aero-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -2;
-  }
 
   .aero-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: rgb(15, 15, 15);
+    background: $backgroundBlack;
     padding: 100px 0px;
     margin-top: 600px;
-    border-top: solid 2px #F1B82D;
+    border-top: solid 2px $mainGold;
     overflow-x: hidden;
   }
   
   .aero-card {
     opacity: 0;
     width: 80%;
-    background-color: #202020;
+    background-color: $cardBackgroundGray;
     border: solid 2px white;
     padding: 40px 30px;
-    color: #e0e0e0;
+    color: $textWhite;
     text-align: center;
-    box-shadow: 5px 5px #ad8622;
+    box-shadow: 5px 5px $shadowGold;
     font-size: 1.2rem;
     line-height: 1.6;
+
+    h3 {
+      font-size: 1.8rem;
+      color: $mainGold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
   
-  .aero-card h3 {
-    font-size: 1.8rem;
-    color: #F1B82D;
-    margin-bottom: 20px;
-  }
-  
-  .aero-card p {
-    margin: 0;
-    padding: 0;
-  }
 
   .grid-background {
-    background: rgb(15, 15, 15);
+    background: $backgroundBlack;
     width: 100%;
     overflow-x: hidden;
   }
@@ -105,24 +108,25 @@ body, html {
     padding: 20px;
     width: 80%;
     margin: 0 auto;
-    background: rgb(15, 15, 15);
+    background: $backgroundBlack;
+
+  img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
   }
   
-  .aero-image-grid img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-  }
 
   .quote-container {
     text-align: center;
-    color: rgb(201, 201, 201);
+    color: #c9c9c9;
     padding: 100px;
-    background: rgb(15, 15, 15);
-  }
+    background: $backgroundBlack;
 
-  .quote-container p {
-    font-size: 1.7rem;
+    p {
+      font-size: 1.7rem;
+    }
   }
   
   /* Adjust for smaller screens */
@@ -130,11 +134,12 @@ body, html {
     .aero-image-grid {
       grid-template-columns: 1fr;
       width: 100%;
+
+      img {
+        height: 200px;
+      }
     }
-  
-    .aero-image-grid img {
-      height: 200px;
-    }
+
   }
 
   .subteam-lead-card-container {
@@ -143,25 +148,25 @@ body, html {
     align-items: center;
     width: 100%;
     padding: 40px 0px;
-    background: rgb(15, 15, 15);
+    background: $backgroundBlack;
   }
   
   .subteam-lead-card {
     opacity: 0;
     width: 80%;
-    background-color: #202020;
+    background-color: $cardBackgroundGray;
     border: solid 2px white;
     padding: 40px 30px;
-    color: #e0e0e0;
+    color: $textWhite;
     text-align: center;
-    box-shadow: 5px 5px #ad8622;
-  }
-  
-  .subteam-lead-card h3 {
-    font-size: 1.8rem;
-    text-align: left;
-    color: #F1B82D;
-    margin-bottom: 20px;
+    box-shadow: 5px 5px $shadowGold;
+
+    h3 {
+      font-size: 1.8rem;
+      text-align: left;
+      color: $mainGold;
+      margin-bottom: 20px;
+    }
   }
   
   .subteam-lead-content {
@@ -174,13 +179,13 @@ body, html {
     flex: 1;
     max-width: 500px;
     padding-right: 20px;
-  }
-  
-  .subteam-lead-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   }
   
   .subteam-lead-text {
@@ -190,11 +195,11 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .subteam-lead-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
   }
 
   .addendumText {
@@ -219,9 +224,3 @@ body, html {
         font-size: 2rem;
     }
   }
-  
-  
-  
-  
-  
-  

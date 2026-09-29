@@ -1,0 +1,15 @@
+@import "../../styles/subteams.scss";
+
+.aero-banner {
+    background-image: url('../../assets/electronics/electronics-banner.jpg');
+}
+
+.middle-banner {
+  @extend .middle-banner;
+  background-image: url('../../assets/electronics/high-voltage-banner.jpg');
+}
+
+.third-banner {
+  @extend .third-banner;
+  background-image: url('../../assets/electronics/high-voltage1.jpg');
+}

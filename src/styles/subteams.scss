@@ -1,0 +1,140 @@
+@import "../styles/colors.scss";
+
+.middle-banner {
+  border-top: solid 2px $mainGold;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.third-banner {
+  border-top: solid 2px $mainGold;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.second-container {
+  margin-top: 0;
+}
+
+.third-container {
+  margin-top: 0;
+}
+
+.aero-text-two {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1; 
+  line-height: 90px;
+  height: 600px;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: calc(600px/2);
+  z-index: -1;
+}
+
+.aero-text-three {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1; 
+  line-height: 90px;
+  height: 600px;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: calc(600px/2);
+  z-index: -1;
+}
+
+.aero-card {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.overviewText {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.card-left {
+  flex: 3;
+}
+
+.card-right {
+  flex: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contact-image {
+  max-width: 100%; /* Image takes up 80% of the right side with padding around it */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the image */
+}
+
+.starColor {
+  color: #F1B82D;
+}
+
+a {
+  font-weight: 600;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+#inner-ordered-list {
+  list-style-type: lower-alpha;
+}
+
+@media (max-width: 768px) {
+  .aero-text-two {
+      font-size: 2rem;
+  }
+
+  .aero-banner {
+    background-position: 39%;
+  }
+
+  .aero-card {
+    flex-direction: column;
+  }
+
+  .card-left, .card-right {
+    flex: unset;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-right p {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .contact-image {
+    max-width: 80%;
+  }
+}

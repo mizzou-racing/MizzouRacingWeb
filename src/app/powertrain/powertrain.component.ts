@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-powertrain',
   templateUrl: './powertrain.component.html',
-  styleUrl: './powertrain.component.css'
+  styleUrl: './powertrain.component.scss'
 })
 export class PowertrainComponent implements AfterViewInit{
 

@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-brakes-and-controls',
   templateUrl: './brakes-and-controls.component.html',
-  styleUrl: './brakes-and-controls.component.css'
+  styleUrl: './brakes-and-controls.component.scss'
 })
 export class BrakesAndControlsComponent implements AfterViewInit {
 

@@ -1,27 +1,29 @@
+@import "../../../styles/colors.scss";
+
 /* First card remains the same */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: rgb(15, 15, 15);
+    background: $backgroundBlack;
     padding: 100px 0px;
     overflow-x: hidden;
   }
 
   .top-card {
     margin-top: 100vh;
-    border-top: solid 2px #F1B82D;
+    border-top: solid 2px $mainGold;
   }
   
   .card {
     display: flex;
     opacity: 0;
     width: 80%; /* Takes up 80% of the screen width */
-    background-color: #202020;
+    background-color: $cardBackgroundGray;
     border: solid 2px white;
     overflow: hidden;
-    box-shadow: 5px 5px #ad8622; /* Adds a subtle shadow */
+    box-shadow: 5px 5px $shadowGold; /* Adds a subtle shadow */
     padding: 80px 30px 80px 30px;
   }
 
@@ -38,7 +40,7 @@
   .timer-cover {
     position: absolute;
     top: 211vh;
-    background: #202020;
+    background: $cardBackgroundGray;
     width: 100vw;
     height: 5vh;
     z-index: 5;
@@ -50,7 +52,7 @@
   
   .card-left {
     flex: 1;
-    color: #F1B82D;
+    color: $mainGold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,70 +61,70 @@
   
   .card-right {
     flex: 2;
-    color: #e0e0e0;
+    color: $textWhite;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
-  }
-  
-  .card-right p {
-    margin: 0;
-    font-size: 1.2rem;
-    padding-left: 30px;
-    border-left: solid 1px white;
+
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      padding-left: 30px;
+      border-left: solid 1px white;
+    }
   }
   
   /* Second card */
   .second-card {
     width: 80%; /* This card is slightly less wide */
     text-align: center;
-  }
-  
-  .second-card .card-left {
-    flex: 1; /* 50% of the card */
-    display: block; /* Vertically stacked elements */
-    color: #F1B82D;
-  }
-  
-  .second-card .card-left h2 {
-    margin-bottom: 15px;
-  }
-  
-  .second-card .card-left p {
-    margin: 5px 0;
-    font-size: 1.2rem;
-    color: rgb(223, 223, 223);
-  }
-  
-  .second-card .card-right {
-    flex: 1; /* 50% of the card */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    .card-left {
+      flex: 1; /* 50% of the card */
+      display: block; /* Vertically stacked elements */
+      color: $mainGold;
+
+      h2 {
+          margin-bottom: 15px;
+      }
+
+      p {
+          margin: 5px 0;
+          font-size: 1.2rem;
+          color: $textWhite;
+      }
+    }
+
+    .card-right {
+        flex: 1; /* 50% of the card */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
   }
   
   .contact-image {
     max-width: 80%; /* Image takes up 80% of the right side with padding around it */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the image */
+    box-shadow: 0 4px 8px #0000001a; /* Adds a shadow around the image */
   }
 
   p a {
     text-decoration: none;
     color: white;
-  }
 
-  p a:link {
-    color: white;
-  }
+    :link {
+      color: white;
+    }
 
-  p a:active {
-    color: white;
-  }
+    :active {
+      color: white;
+    }
 
-  p a:visited {
-    color: white;
+    :visited {
+      color: white;
+    }
   }
   
   /* Media Query for screens smaller than 768px (e.g., mobile devices) */

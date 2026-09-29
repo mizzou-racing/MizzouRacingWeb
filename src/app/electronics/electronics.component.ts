@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-electronics',
   templateUrl: './electronics.component.html',
-  styleUrl: './electronics.component.css'
+  styleUrl: './electronics.component.scss'
 })
 export class ElectronicsComponent implements AfterViewInit{
 

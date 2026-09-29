@@ -3,7 +3,7 @@ import { Component, OnInit, AfterViewInit, ElementRef, Renderer2 } from '@angula
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit, AfterViewInit {
 

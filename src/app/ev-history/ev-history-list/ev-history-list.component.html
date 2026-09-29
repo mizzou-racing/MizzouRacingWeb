@@ -1,0 +1,9 @@
+<!--pictures/titles-->
+<div class="history-cars-section">
+  @for (car of cars; track car.id) {
+    <div class="history-car">
+      <h2>{{ car.year }} {{ car.name }}</h2>
+      <img [src]="car.imgPath" [alt]="car.name">
+    </div>
+  }
+</div>
