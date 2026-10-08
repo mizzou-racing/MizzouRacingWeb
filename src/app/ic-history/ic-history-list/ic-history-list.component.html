@@ -7,7 +7,10 @@
     </div>
 
       @if (selectedCarId === car.id) {
-        <div class="extra-car-info">
+        <div class="extra-car-info animate__animated"
+       [class.animate__fadeInLeft]="!isLeaving"
+       [class.animate__fadeOutRight]="isLeaving"
+       (animationend)="onAnimationEnd($event)">
 
           <br> 
           <div>
