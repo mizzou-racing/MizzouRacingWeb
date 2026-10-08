@@ -1,0 +1,6 @@
+@import "../../styles/competition.scss";
+
+.ev-competition-banner {
+  @extend .ev-competition-banner;
+  background-image: url('../../assets/ev-comp/comp-banner.jpg');
+}

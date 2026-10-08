@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-log-finance',
   templateUrl: './log-finance.component.html',
-  styleUrl: './log-finance.component.css'
+  styleUrl: './log-finance.component.scss'
 })
 export class LogFinanceComponent implements AfterViewInit{
 

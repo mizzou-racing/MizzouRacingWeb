@@ -1,0 +1,168 @@
+@import "../styles/colors.scss";
+
+#storrsFakeLogo {
+  background-color: $textWhite;
+  color: black;
+  width: 100%;
+
+  h1 {
+    font-size: 36pt;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    margin-top: 0;
+    }
+}
+
+.sponsors-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: $cardBackgroundGray; /* Dark background for consistency */
+    color: $textWhite; /* Light text color */
+    margin-top: 120px;
+
+    h1 {
+        font-size: 3rem;
+        color: $mainGold; /* Mizzou yellow */
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto; /* Center the paragraph */
+        color: $textWhite;
+    }
+  }
+
+  .sponsors-container {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+  }
+
+  .sponsors-grid-container {
+    width: 100vw;
+    background: $cardBackgroundGray;
+  }
+  
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase the minimum size of the cards */
+    gap: 30px; /* Increase the gap for better spacing */
+    padding: 40px 20px;
+    background-color: $cardBackgroundGray;
+    max-width: 1200px; /* Add a max width to keep the layout manageable */
+    margin: auto;
+  }
+  
+  .sponsor-card {
+    background-color: $cardBackgroundGray;
+    border: 2px solid white;
+    padding: 30px; /* Increase padding to make the cards bigger */
+    text-align: center;
+    box-shadow: 5px 5px $shadowGold;
+    color: $textWhite;
+
+    img {
+        width: 100%;
+        height: 250px; /* Increase the height of the logo */
+        object-fit: contain;
+        margin-bottom: 20px;
+        background: white;
+    }
+
+    a {
+        font-size: 1.8rem; /* Increase font size */
+        color: $mainGold;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-size: 1.8rem; /* Increase font size */
+        color: #d1d1d1;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+
+    p {
+        font-size: 1.3rem; /* Increase font size */
+        color: $textWhite;
+        margin: 0;
+    }
+  }
+
+  .dark-sponsor img {
+    background: #2a2a2a;
+  }
+
+  .sponsor-black img{
+    background: black;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .sponsors-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .sponsor-card img {
+      height: 150px; /* Adjust image size for smaller screens */
+    }
+  }
+  
+
+  .small-sponsors-container {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    background: $cardBackgroundGray;
+    width: 100vw;
+  }
+  
+  .small-sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Use auto-fit for flexibility */
+    gap: 20px;
+    padding: 40px 0px;
+    background-color: $cardBackgroundGray;
+    max-width: 1200px;
+    width: 100vw;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .small-sponsor-card {
+    background-color: $cardBackgroundGray;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px $shadowGold;
+    color: $textWhite;
+
+    img {
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+    }
+  }
+
+  .small-image-back img{
+    background: #ffffff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .small-sponsors-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .small-sponsor-card img {
+      height: 200px; /* Correct image size adjustment */
+    }
+  }
+  
+  
+  

@@ -1,0 +1,29 @@
+<!--pictures/titles-->
+<div class="history-cars-section">
+  @for (car of cars; track car.id) {
+    <div class="history-car clickable" (click)="toggleCar(car.id)">
+      <h2>{{ car.year }} {{ car.name }}</h2>
+      <img [src]="car.imgPath" [alt]="car.name">
+    </div>
+
+      @if (selectedCarId === car.id) {
+        <div class="extra-car-info animate__animated"
+       [class.animate__fadeInLeft]="!isLeaving"
+       [class.animate__fadeOutRight]="isLeaving"
+       (animationend)="onAnimationEnd($event)">
+
+          <br> 
+          <div>
+            <h3>{{ car.name }}</h3>
+
+            <p>{{ car.description ?? "No additional information available at this time." }}</p>
+          </div>
+          <br>
+
+          @for (img of car.extraImgs; track img) {
+            <img [src]="img" [alt]="car.name">
+          }
+        </div>
+      }
+  }
+</div>

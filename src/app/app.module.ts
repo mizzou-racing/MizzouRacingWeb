@@ -26,6 +26,8 @@ import { CommonModule } from '@angular/common';
 import { ParallaxMousemoveDirective } from './parallax-mousemove.directive';
 import { LogFinanceComponent } from './log-finance/log-finance.component';
 import { HowToGiveComponent } from './how-to-give/how-to-give.component';
+import { IcHistoryListComponent } from './ic-history/ic-history-list/ic-history-list.component';
+import { EvHistoryListComponent } from './ev-history/ev-history-list/ev-history-list.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { HowToGiveComponent } from './how-to-give/how-to-give.component';
     ContentComponent,
     FooterComponent,
     EvHistoryComponent,
+    EvHistoryListComponent,
     IcHistoryComponent,
+    IcHistoryListComponent,
     MeetTheTeamComponent,
     AerodynamicsComponent,
     BrakesAndControlsComponent,

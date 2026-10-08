@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-ev-history',
   templateUrl: './ev-history.component.html',
-  styleUrl: './ev-history.component.css'
+  styleUrl: './ev-history.component.scss'
 })
 export class EvHistoryComponent implements AfterViewInit{
   constructor(private el: ElementRef) {}

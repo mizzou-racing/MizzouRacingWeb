@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+@import "../../styles/history.scss";
+
+/* styling for hero image*/
+.ic-history-banner {
+  @extend .history-banner;
+  background-image: url('../../assets/ic-history/ic-history-banner.jpg'); /* Replace with your image path */
+}
+
+.ic-history-text {
+  @extend .history-text;
+}

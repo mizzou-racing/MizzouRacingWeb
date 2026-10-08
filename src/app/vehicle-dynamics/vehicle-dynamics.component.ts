@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-vehicle-dynamics',
   templateUrl: './vehicle-dynamics.component.html',
-  styleUrl: './vehicle-dynamics.component.css'
+  styleUrl: './vehicle-dynamics.component.scss'
 })
 export class VehicleDynamicsComponent implements AfterViewInit{
 

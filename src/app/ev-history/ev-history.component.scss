@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+@import "../../styles/history.scss";
+
+/* styling for hero image*/
+.ev-history-banner {
+  @extend .history-banner;
+  background-image: url('../../assets/ev-history/JuneAutocross.jpg'); /* Replace with your image path */
+}
+  
+.ev-history-text {
+  @extend .history-text;
+}

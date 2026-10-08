@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-ic-history',
   templateUrl: './ic-history.component.html',
-  styleUrl: './ic-history.component.css'
+  styleUrl: './ic-history.component.scss'
 })
 export class IcHistoryComponent implements AfterViewInit{
   constructor(private el: ElementRef) {}

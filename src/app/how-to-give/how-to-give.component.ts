@@ -3,7 +3,7 @@ import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/cor
 @Component({
   selector: 'app-how-to-give.component',
   templateUrl: './how-to-give.component.html',
-  styleUrl: './how-to-give.component.css'
+  styleUrl: './how-to-give.component.scss'
 })
 export class HowToGiveComponent implements AfterViewInit {
 

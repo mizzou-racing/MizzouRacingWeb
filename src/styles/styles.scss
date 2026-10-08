@@ -1,0 +1,226 @@
+@import "../styles/colors.scss";
+
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #11111100;
+    height:  100%;
+}
+
+/* Sub Team Stylings */
+.aero-banner {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    border-bottom: solid 2px $mainGold;
+    z-index: -2;
+    top: 0;
+  }
+
+  .aero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -2;
+  }
+  
+  .aero-text {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1; 
+    line-height: 90px;
+    height: 600px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: calc(600px/2);
+    z-index: -1;
+  }
+
+  .aero-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: $backgroundBlack;
+    padding: 100px 0px;
+    margin-top: 600px;
+    border-top: solid 2px $mainGold;
+    overflow-x: hidden;
+  }
+  
+  .aero-card {
+    opacity: 0;
+    width: 80%;
+    background-color: $cardBackgroundGray;
+    border: solid 2px white;
+    padding: 40px 30px;
+    color: $textWhite;
+    text-align: center;
+    box-shadow: 5px 5px $shadowGold;
+    font-size: 1.2rem;
+    line-height: 1.6;
+
+    h3 {
+      font-size: 1.8rem;
+      color: $mainGold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+
+  .grid-background {
+    background: $backgroundBlack;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .aero-image-grid {
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background: $backgroundBlack;
+
+  img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+  
+
+  .quote-container {
+    text-align: center;
+    color: #c9c9c9;
+    padding: 100px;
+    background: $backgroundBlack;
+
+    p {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .aero-image-grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+
+      img {
+        height: 200px;
+      }
+    }
+
+  }
+
+  .subteam-lead-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px;
+    background: $backgroundBlack;
+  }
+  
+  .subteam-lead-card {
+    opacity: 0;
+    width: 80%;
+    background-color: $cardBackgroundGray;
+    border: solid 2px white;
+    padding: 40px 30px;
+    color: $textWhite;
+    text-align: center;
+    box-shadow: 5px 5px $shadowGold;
+
+    h3 {
+      font-size: 1.8rem;
+      text-align: left;
+      color: $mainGold;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .subteam-lead-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subteam-lead-image {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .subteam-lead-text {
+    flex: 2;
+    padding-left: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+
+  .addendumText {
+    font-size: 12pt;
+  }
+  
+  @media (max-width: 768px) {
+    .subteam-lead-content {
+      flex-direction: column;
+    }
+  
+    .subteam-lead-image {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .subteam-lead-text {
+      padding-left: 0;
+    }
+
+    .aero-text {
+        font-size: 2rem;
+    }
+  }

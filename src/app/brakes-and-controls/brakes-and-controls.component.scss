@@ -1,0 +1,10 @@
+@import "../../styles/subteams.scss";
+
+.aero-banner {
+    background-image: url('../../assets/brakes-and-controls/MMRacequip.jpg');
+  }
+
+.middle-banner {
+  @extend .middle-banner;
+  background-image: url('../../assets/electronics/high-voltage-banner.jpg');
+}
