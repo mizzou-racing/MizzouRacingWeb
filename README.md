@@ -30,6 +30,23 @@ Each smaller sponsor is represented by the above block of code.
 **If you would like to add a new sponsor, copy and paste the respective block of code.**
 <br><br>
 
+## EV/IC History
+
+Navigate to the `history-list.component.ts` of which history you are editing.
+Create a new item in the `cars` array formatted as so:
+```ts
+  {
+    id: , 
+    name: "", 
+    year: "", 
+    imgPath: "", 
+    description: "", 
+    extraImgs: ["","",""]
+  }
+```
+description and extraImgs are optional fields.
+
+<br><br>
 ## How to update the site with your changes.
 1. **Initialize Git**  
 If you haven't already initialized Git in your project, run this command to start version control in your project directory:
